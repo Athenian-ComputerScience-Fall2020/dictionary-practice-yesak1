@@ -7,7 +7,7 @@ def make_dict():
     keys = ['Ten', 'Twenty', 'Thirty']
     values = [10, 20, 30]
     '''
-    currency =          # complete this line
+    currency = {"Ten": 10, "Twenty": 20, "Thirty": 30}         # complete this line
 
     return currency
 
@@ -15,13 +15,14 @@ def add_element():
     foods = {'fruit': 'apple', 'veggie': 'carrot', 'grain': 'barley'}
     # add a key value pair 'dairy': 'yogurt' to the following dictionary
 
-    # add code here
+    foods.update({"dairy": "yogurt"})
 
     return foods
 
 def remove_element():
     foods = {'fruit': 'apple', 'veggie': 'carrot', 'grain': 'barley'}
     # remove 'veggie': 'carrot' from the dictionary
+    del foods["veggie"]
 
 
     return foods

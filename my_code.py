@@ -31,15 +31,15 @@ def merge_dict():
     # Merge these two dictionaries together so the contents are in numerical order:
     dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
     dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
-    # add code here
-
-    return     # return new dictionary
+    
+    dict1.update(dict2) 
+    return dict1  # return new dictionary
 
 def access_key():
     # return the value of the key 'Twenty'
     currency = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
 
-    val =             # add code to assign the desired value to 'val'
+    val = currency.get("Twenty", 'not found')           # add code to assign the desired value to 'val'
     return val
 
 
@@ -49,5 +49,5 @@ def access_key():
 if __name__ == '__main__':
     # Test your code with this first
     # Change the function to test different sections
-    print(make_dict())
+    print(merge_dict())
 
